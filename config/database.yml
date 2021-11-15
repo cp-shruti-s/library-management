@@ -1,0 +1,31 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  adapter: postgresql
+  database: "library_infos"
+  username: "postgres"
+  password: "mysecretpassword"
+  encoding: unicode
+  port: 5433
+  host: 127.0.0.1
+  pool: 5
+
+test:
+  adapter: postgresql
+  database: "library_infos"
+  username: "postgres"
+  password: "mysecretpassword"
+  encoding: unicode
+  port: 5433
+  host: 127.0.0.1
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: library_infos
+  pool: 5
+  username: postgres
+  password: mysecretpassword
